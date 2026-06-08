@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Layout</title>
+	<link rel="stylesheet" type="text/css" href="mydesign.css">
+</head>
+<body>
+	<div class="main-container"> <!-- START OF BOX 1-->
+		<header>
+			<h1 id="header">Study in Computer</h1>
+			<h2>HTML</h2>
+			<img src="computer.png" class="logo" alt="Computer">
+		</header>
+
+<!--Flex Box-->
+	<div class="wrapper">
+		<nav>
+			<div class="links">
+				<ul>
+					<li><a href="#">Header</a></li>
+					<li><a href="#">Section</a></li>
+					<li><a href="#">Aside</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<section>
+			<!--FORM CONTROL-->
+			<form name="registration" method="post" action="#">
+				<fieldset>
+					<legend>Personal Information</legend>
+
+					<div class="form-group">
+						<label>Full Name</label>
+						<input type="text" name="fullname" placeholder="Last Name, First Name MI" disabled>
+					</div>
+
+					<div class="form-group">
+						<label>Email</label>
+						<input type="email" name="useremail" placeholder="juandelacruz@gmail.com" readonly>
+					</div>
+
+					<div class="form-group">
+						<label>Password</label>
+						<input type="password" name="password" placeholder="up to 8 characters long..." maxlength="8" required>
+					</div>
+					<label>Gender</label>
+					<input type="radio" name="gender" id="male">
+					<label for="male" class="radio_button">Male</label>
+
+					<input type="radio" name="gender" id="female">
+					<label for="female" class="radio_button">Female</label>
+
+				</fieldset>
+
+				<fieldset>
+					<legend>Academics</legend>
+					<label>Year Level</label>
+
+					<select name="year_level">
+						<option>--Choose a Level--</option>
+						<option>1st</option>
+						<option>2nd</option>
+						<option>3rd</option>
+						<option>4th</option>
+						
+					</select>
+
+					<label>Bio</label>
+					<textarea rows="5" cols="35" placeholder="Please enter your student bio..."></textarea>
+
+					<label>Interest</label>
+					<input type="checkbox" id="swimming">
+					<label for="swimming" class="check_button">Swimming</label>
+
+					<input type="checkbox" id="reading">
+					<label for="reading" class="check_button">Reading</label>
+
+					<input type="checkbox" id="mobile_gaming">
+					<label for="mobile_gaming" class="check_button">Mobile Gaming</label>
+
+					<label>Birthdate</label>
+					<input type="date" name="birthdate">
+					<label>Age</label>
+					<input type="number" name="age" min="1" max="110" class="age">
+
+					<label>Choose your Color</label>
+					<input type="color" name="color" class="color">
+
+					<label for="profile">Choose a Profile Picture</label>
+					<input type="file" name="profile" id="profile">
+					
+				</fieldset>
+
+				<div class="form-group">
+						<input type="submit" value="Login">
+				</div>
+
+				<div class="form-group">
+						<input type="reset" value="Clear">
+				</div>
+
+			</form>
+		</section>
+		<aside> 
+			<div class="audio_box"><!--Audio Box-->
+		<div class="title">A sample of audio element</div>
+
+		<audio controls><!--sound file-->
+			<source src="multimedia/dial.wav" type="audio/wav">
+				Your browser does not support the audio tag.
+		</audio><!--sound file-->
+
+		<div class="description"> This was created using audio tag. </div>
+	</div><!--Audio Box-->
+
+	<div class="video_box"><!--Video Box-->
+		<div class="title">A sample of video element</div>
+
+		<video controls><!--Video File-->
+		<source src="multimedia/woman.mp4" type="video/mp4">
+		</video><!--Video File-->
+
+		<div class="description"> This was created using video tag. </div>
+	</div><!--Video Box-->
+
+		</aside>
+	</div>
+<!--Flex Box-->
+
+		<footer>
+			<p>PHINMA-University of Pangasinan</p>
+			<p>Copyright &copy; 2026</p>
+		</footer>
+	</div> <!--END OF BOX 1-->
+</body>
+</html>

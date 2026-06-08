@@ -1,0 +1,181 @@
+/* outer box*/
+*{margin:0;padding:0}
+body{
+	box-sizing: border-box;
+}
+
+.main-container{
+	width: 75%;
+	//background: #B5BAFF;
+	border: 1px solid black;
+	margin: auto;
+}
+
+header{
+	width: 100%;
+	//background: #AEE2FF;
+	height: 200px;
+	font-size: x-large;
+	font-family: serif;
+	padding-top: 30px;
+}
+
+footer{
+	width: 100%;
+	background: #AEE2FF;
+	height: 100px;
+	font-size: xx-large;
+}
+
+.wrapper{
+	width: 100%;
+	display: flex;
+	border-top: 1px solid gray;
+	border-top: 1px solid gray;
+}
+
+nav{
+	flex: 25;
+	//background: #B5BAFF;
+	min-height: 600px;
+	font-size: large;
+	font-family: sans-serif;
+}
+
+section{
+	flex: 50;
+	//background: #9FA1FF;
+	min-height: 600px;
+	padding-top: 40px;
+}
+
+aside{
+	flex: 25;
+	//background: #B5BAFF;
+	min-height: 600px;
+}
+
+header,nav,section,aside,footer{
+	text-align: center;
+}
+
+.audio_box{
+	width: 30%;
+	height: 100px;
+	border-radius: 15px;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+.video_box{
+	height: 650px;
+	width: 300px;
+	padding: 10px;
+}
+
+.title{
+	color: black;
+	font-family: sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.description{
+	color: black;
+	font-family: sans-serif;
+	font-style: oblique;
+}
+
+video{
+	height: 600px;
+	width: 300px;
+	border-radius: 15px;
+}
+
+.logo{
+	height: 100px;
+	width: 100px;
+	float: left;
+	position: relative;
+}
+
+.links{
+	text-decoration: none;
+}
+
+label{
+	display: block;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-family: sans-serif;
+	color: darkblue;
+}
+
+form{
+	margin: auto;
+	width: 600px;
+	padding: 10px;
+	background-color: whitesmoke;
+	border-radius: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],select, input[type="date"]{
+	padding: 20px;
+	width: 80%;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+
+fieldset{
+	width: 90%;
+	border: 2px solid gray;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+legend{
+	font-size: 16pt;
+	color: blue;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+input[type="submit"], input[type="reset"]{
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	background: green;
+	color: yellow;
+	padding-right: 15px;
+	border-radius: 5px;
+}
+
+textarea{
+	min-height:  100px;
+	resize: vertical;
+}
+
+.radio_button{
+	display: inline;
+	color: black;
+	font-weight: normal;
+	margin-right: 20px;
+}
+
+.check_button{
+	display: inline;
+	color: black;
+	font-weight: normal;
+	margin-right: 20px;
+}
+
+.age{
+	width: 50%;
+	padding: 10px;
+	background: gray;
+}
+
